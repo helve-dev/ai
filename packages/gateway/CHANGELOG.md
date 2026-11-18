@@ -1,5 +1,13 @@
 # @ai-sdk/gateway
 
+## 4.0.151
+
+### Patch Changes
+
+- 875de7b: feat(google): add the `gemini-4-neon` model ID with `xhigh` thinking support
+- Updated dependencies [1d2c2ff]
+  - @ai-sdk/provider-utils@5.0.83
+
 ## 4.0.150
 
 ### Patch Changes

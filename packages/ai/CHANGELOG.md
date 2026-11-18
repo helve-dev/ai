@@ -1,5 +1,16 @@
 # ai
 
+## 7.0.178
+
+### Patch Changes
+
+- 0b8cbfa: `generateText` and `streamText` passed the messages array that `prepareStep` returned to tools and tool approval functions as it was. When `prepareStep` returned the same array for several steps or calls, tool approval functions could not tell the tool calls of one model response from the tool calls of another. The messages array of every step is now created for that step, so the messages that `prepareStep` returns are copied.
+- 6815153: fix(ai): forward the `preliminary` flag on provider-executed tool results in `streamText`, so preliminary results (e.g. OpenAI image generation previews) are no longer recorded as final tool results in step content and response messages
+- Updated dependencies [1d2c2ff]
+- Updated dependencies [875de7b]
+  - @ai-sdk/provider-utils@5.0.83
+  - @ai-sdk/gateway@4.0.151
+
 ## 7.0.177
 
 ### Patch Changes
